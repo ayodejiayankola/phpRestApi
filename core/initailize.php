@@ -4,9 +4,18 @@
 defined('DS') ? null : define('DS', DIRECTORY_SEPARATOR);
 defined('SITE_ROOT') ? null : define('SITR_ROOT', DS. 'xampp'.DS.'htdocs'.DS.'restapi');
 
+//Xampp/htdocs/phprest/includes
+defined('INC_PATH') ? null : define('INC_PATH', SITE_ROOT.DS.'includes');
+
+//Xampp/htdocs/phprest/core
+defined('CORE_PATH') ? null : define('CORE_PATH', SITE_ROOT.DS.'core');
 
 
+//load the config file first
+
+require_once(INC_PATH.DS.'config.php');
 
 
-
+//load the core classes
+require_onceI(CORE_PATH.DS. "post.php");
 ?>
