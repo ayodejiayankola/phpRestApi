@@ -5,7 +5,9 @@ $db_user = 'root';
 $db_name = 'restapi';
 $db_password = '';
 
-$db = new PDO("mysql:host=$this->host;db_name=$this->db_name", $this->username, $this->db_password);
+//$db = new PDO("mysql:host=$db_host;db_name=$db_name", $db_user, $db_password);
+
+$db = new PDO('mysql:host='. $db_host . ';dbname='.$db_name.';charset=utf8', $db_user, $db_password);
 
 
 //Set DB attribute
