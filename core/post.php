@@ -150,11 +150,11 @@ class Post{
     }
 
 
-    //Delete Function
+     //Delete Function
     public function delete(){
         //create query
         $query = 'DELETE FROM ' . $this->table . '
-        WHERE id =  :id ';
+        WHERE id =  :id';
      //prepare statement
         $stmt = $this->conn->prepare($query);
         //clean data

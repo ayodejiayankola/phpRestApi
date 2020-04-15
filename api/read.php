@@ -33,7 +33,7 @@ if ($num>0) {
             'author ' => $author,
             'category_id' => $category_id,
             'category_name' => $category_name,
-
+            'created_at' => $created_at,
         );
         array_push($post_arr['data'],$post_item);
 
